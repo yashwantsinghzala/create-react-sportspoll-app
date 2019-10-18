@@ -8,29 +8,21 @@ const AppContainer = () => {
   const dispatch = useDispatch();
   const scores = useSelector(state => state.scores);
   let [count, setCount] = useState(0);
-  const [score, setScore] = useState(scores);
   const [match, setCurrentMatch] = useState([]);
 
   useEffect(() => {
     // componentDidMount
     if (!count) {
-      console.log("component has mounted");
-      window.addEventListener("onbeforeunload", updateLocalStorage);
       setCurrentMatch(getRandomMatch());
       setCount(1);
+      return;
     }
-    setScore(scores);
-    // componentWillUnmount
-    return () => {
-      console.log("component has unmounted");
-      updateLocalStorage();
-      window.removeEventListener("beforeunload", updateLocalStorage); // remove the event handler for normal unmounting
-    };
+    // componentWillRecieveProps
+    updateLocalStorage();
   }, [scores]);
 
   const updateLocalStorage = () => {
-    console.log(scores);
-    localStorage.setItem("SCORES", JSON.stringify(score));
+    localStorage.setItem("SCORES", JSON.stringify(scores));
   };
 
   const updateScore = (matchId, outcome) => {
@@ -41,7 +33,7 @@ const AppContainer = () => {
     <Fragment>
       <Game
         match={match}
-        scores={score && score[match.id]}
+        scores={scores && scores[match.id]}
         updateScore={updateScore}
       />
     </Fragment>
