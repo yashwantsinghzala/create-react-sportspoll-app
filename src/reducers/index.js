@@ -1,8 +1,7 @@
-import { UPDATE_SCORE } from '../constants/types';
+import { UPDATE_SCORE } from "../constants/types";
 
 export const initialState = {
-  loading: false,
-  scores: JSON.parse(localStorage.getItem('SCORES'))
+  scores: JSON.parse(localStorage.getItem("SCORES"))
 };
 
 export default (state = initialState, action) => {

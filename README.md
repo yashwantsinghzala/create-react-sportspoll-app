@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Prerequisites
 
+Make sure you have updated version of node and npm install in your system
+
 ## To install dependency
 
 Go to root directory of the project and do `npm install`
@@ -47,6 +49,8 @@ To run the test cases : `npm run test`
 - App is structured in modular design pattern (Rail Pattern) which consist of src folder which is having components ,container, reducer , actions ,utils and constant files.
 - Components are dump component which gets prop from container component.
 - App Container is responsible to render Game components and providing data as a props to it which in terms rendering Header,Match,Poll and PollData Components.
+- Storing the score object in redux store for communication till browser doen't refresh , once it is refresh reducer will have intial state of scores from localStorage.
+- Added snapshot test cases for components and reducer using jest and enzyme in order to make sure my data(scores) is updating correctly.
 
 ## Implementation approach on UI
 

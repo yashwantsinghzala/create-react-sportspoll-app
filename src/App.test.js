@@ -58,4 +58,26 @@ describe("component and reducer testing", () => {
   it("should return the initial state", () => {
     expect(reducer(undefined, {})).toEqual(initialState);
   });
+
+  it("should update the score in store", () => {
+    const matchId = 1002916450;
+    const initialState = { scores: {} };
+    const outcome = "home";
+    const newState = {
+      scores: {
+        1002916450: {
+          home: 1
+        }
+      }
+    };
+    expect(
+      reducer(initialState, {
+        type: UPDATE_SCORE,
+        payload: {
+          matchId,
+          outcome
+        }
+      })
+    ).toEqual(newState);
+  });
 });
