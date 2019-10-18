@@ -1,0 +1,117 @@
+.App {
+  font-size: 1rem;
+  line-height: 1.4;
+  background: #f2f2f2;
+  height: 100%;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: calc(100vh - 40px);
+}
+
+.App > div {
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  padding: 15px 0;
+  background: #ffffff;
+  text-align: left;
+}
+
+.flag-img {
+  width: 22px;
+}
+
+.match-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.header h1 {
+  margin: 0 auto 20px;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 20px;
+}
+
+.home-team,
+.away-team {
+  flex: 1;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.versus span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.sport-img {
+  width: 20px;
+}
+
+.group {
+  font-weight: bold;
+}
+
+.started,
+.not_started {
+  color: green;
+  font-style: italic;
+}
+
+.finished {
+  color: red;
+  font-style: italic;
+}
+
+.poll-wrapper {
+  margin-bottom: 20px;
+}
+
+.poll-data-title,
+.poll-title {
+  font-weight: bold;
+  border-top: 1px solid #e2e2e2;
+  padding: 20px 0 0;
+  margin-bottom: 20px;
+}
+
+.poll-data-options {
+  width: 400px;
+  display: inline-block;
+}
+
+.poll-option {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poll-option input {
+  width: 1em;
+  height: 1em;
+  margin: 0 10px 0 0;
+}
+
+.polled-option-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.success-message {
+  color: green;
+  margin-top: 15px;
+}
