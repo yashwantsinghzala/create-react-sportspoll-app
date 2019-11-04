@@ -30,6 +30,7 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm install && npm run build && nodemon server.js"
   },
+  "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
   },
