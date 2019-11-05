@@ -24,8 +24,11 @@
     "nodemon": "^1.19.4",
     "react-scripts": "3.1.2"
   },
+  "homepage": "https://yashwantsinghzala.github.io/create-react-sportspoll-app",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
