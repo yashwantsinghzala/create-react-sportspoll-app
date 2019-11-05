@@ -2,9 +2,6 @@
   "name": "sports-poll-app",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "10.15.0"
-  },
   "proxy": "http://localhost:5000",
   "dependencies": {
     "enzyme": "^3.10.0",
@@ -22,7 +19,6 @@
     "lodash": "^4.17.15",
     "react-scripts": "3.1.2"
   },
-  "homepage": "https://yashwantsinghzala.github.io/create-react-sportspoll-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
