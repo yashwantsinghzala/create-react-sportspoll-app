@@ -10,11 +10,13 @@ Make sure you have updated version of node and npm install in your system
 
 ## To install dependency
 
-Go to root directory of the project and do `npm install`
+Go to root directory of the project and do
+cd client and then do
+`npm install`
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project client directory, you can run:
 
 ### `npm start`
 

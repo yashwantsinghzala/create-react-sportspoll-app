@@ -1,0 +1,47 @@
+{
+  "name": "sports-poll-app",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "10.15.0"
+  },
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-redux": "^7.1.1",
+    "react-test-renderer": "^16.10.1",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "enzyme-to-json": "^3.4.1",
+    "gh-pages": "^2.1.1",
+    "lodash": "^4.17.15",
+    "react-scripts": "3.1.2"
+  },
+  "homepage": "https://yashwantsinghzala.github.io/create-react-sportspoll-app",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
